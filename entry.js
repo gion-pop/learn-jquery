@@ -4,7 +4,7 @@ function Entry () {
     this.body = "";
 }
 
-entry_array = new Array();
+var entry_array = new Array();
 for (i = 0; i < 2; i++) {
     entry_array[i] = new Entry();
 }
@@ -22,7 +22,7 @@ function put_entry (ary) {
 //	$("body").append(entry_dom_obj[i]);
 //    jQuery.each(ary, $("body").append);
     for (i = 0; ary[i] != undefined ; i++) {
-	entry = $(
+	var entry = $(
 	    '<div>'
 		+ '<p class="title">' + entry_array[i].title + '</p>'
 		+ '<p class="author">' + entry_array[i].author + '</p>'
