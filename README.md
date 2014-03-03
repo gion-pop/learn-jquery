@@ -1,2 +1,2 @@
-learn-jquery
+learn-jQuery
 ============
