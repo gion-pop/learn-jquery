@@ -1,4 +1,4 @@
-function Entry () {
+function Entry() {
     this.title = "";
     this.author = "";
     this.body = "";
@@ -17,7 +17,7 @@ entry_array[1].title = "あいうえお";
 entry_array[1].author = "わたし";
 entry_array[1].body = "内容";
 
-function put_entry (ary) {
+function put_entry(ary) {
 //    for (i = 0; entry_dom_obj[i] != undefined; i++)
 //	$("body").append(entry_dom_obj[i]);
 //    jQuery.each(ary, $("body").append);
@@ -33,7 +33,9 @@ function put_entry (ary) {
     }
 }
 
-put_entry(entry_array);
-put_entry(entry_array);
+$(function() {
+    put_entry(entry_array);
+    put_entry(entry_array);
+});
 
 //$("body")
