@@ -24,9 +24,9 @@ function put_entry (ary) {
     for (i = 0; ary[i] != undefined ; i++) {
 	var entry = $(
 	    '<div>'
-		+ '<p class="title">' + entry_array[i].title + '</p>'
-		+ '<p class="author">' + entry_array[i].author + '</p>'
-		+ '<p class="body">' + entry_array[i].body + '</p>'
+		+ '<p class="title">' + ary[i].title + '</p>'
+		+ '<p class="author">' + ary[i].author + '</p>'
+		+ '<p class="body">' + ary[i].body + '</p>'
 		+ '</div>'
 	);
 	$('body').append(entry);
